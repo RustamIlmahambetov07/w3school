@@ -1,0 +1,12 @@
+Statements
+A computer program is a list of "instructions" to be "executed" by a computer.
+
+In a programming language, these programming instructions are called statements.
+
+The following statement "instructs" the compiler to print the text "Hello World" to the screen:
+
+Example
+printf("Hello World!");
+It is important that you end the statement with a semicolon ;
+
+If you forget the semicolon (;), an error will occur and the program will not run:
