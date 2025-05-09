@@ -1,0 +1,8 @@
+Double Quotes
+When you are working with text, it must be wrapped inside double quotations marks "".
+
+If you forget the double quotes, an error occurs:
+
+Example
+printf("This sentence will work!");
+printf(This sentence will produce an error.);
