@@ -1,0 +1,10 @@
+Basic Format Specifiers
+There are different format specifiers for each data type. Here are some of them:
+
+Format Specifier	Data Type	Try it
+%d or %i	int	
+%f or %F	float	
+%lf	double	
+%c	char	
+%s	Used for strings (text), which you will learn more about in a later chapter	
+Note: It is important that you use the correct format specifier for the specified data type. If not, the program may produce errors or even crash.
