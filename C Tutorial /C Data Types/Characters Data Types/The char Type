@@ -1,0 +1,31 @@
+/*The char data type is used to store a single character.
+
+The character must be surrounded by single quotes, like 'A' or 'c', and we use the %c format specifier to print it: */
+
+//example 
+
+#include <stdio.h>
+
+int main() {
+  char myGrade = 'A';
+  printf("%c", myGrade);
+  return 0;
+}
+
+/* Alternatively, if you are familiar with ASCII, you can use ASCII values to display certain characters. Note that these values are not surrounded by quotes (''), as they are numbers: */
+
+//example
+
+#include <stdio.h>
+
+int main() {
+  char a = 65, b = 66, c = 67;
+  printf("%c\n", a);
+  printf("%c\n", b);
+  printf("%c", c);
+  return 0;
+}
+
+/* Tip: A list of all ASCII values can be found in our ASCII Table Reference. */
+
+
