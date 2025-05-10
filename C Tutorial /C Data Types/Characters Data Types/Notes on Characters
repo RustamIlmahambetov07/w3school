@@ -1,0 +1,26 @@
+/* If you try to store more than a single character, it will only print the last character: */
+
+//example 
+
+#include <stdio.h>
+
+int main() {
+  char myText = 'Hello';
+  printf("%c", myText);
+  return 0;
+}
+
+/* Note: Don't use the char type for storing multiple characters, as it may produce errors.
+
+To store multiple characters (or whole words), use strings (which you will learn more about in a later chapter): */
+
+//example 
+
+#include <stdio.h>
+
+int main() {
+  char myText[] = "Hello";
+  printf("%s", myText);
+  return 0;
+}
+
