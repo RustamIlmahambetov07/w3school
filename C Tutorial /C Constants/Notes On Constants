@@ -1,0 +1,12 @@
+/* When you declare a constant variable, it must be assigned with a value: */
+
+Example
+
+Like this:
+
+const int minutesPerHour = 60;
+
+This however, will not work:
+
+const int minutesPerHour;
+minutesPerHour = 60; // error
