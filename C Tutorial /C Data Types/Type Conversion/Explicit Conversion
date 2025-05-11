@@ -1,0 +1,37 @@
+/* Explicit conversion is done manually by placing the type in parentheses () in front of the value.
+
+Considering our problem from the example above, we can now get the right result: */
+
+int main() {
+  // Manual conversion: int to float
+  float sum = (float) 5 / 2;
+
+  printf("%f", sum);
+  return 0;
+}
+
+// You can also place the type in front of a variable:
+
+#include <stdio.h>
+
+int main() {
+  int num1 = 5;
+  int num2 = 2;
+  float sum = (float) num1 / num2;
+
+  printf("%f", sum);
+  return 0;
+}
+
+/* And since you learned about "decimal precision" in the previous chapter, you could make the output even cleaner by removing the extra zeros (if you like): */
+
+#include <stdio.h>
+
+int main() {
+  int num1 = 5;
+  int num2 = 2;
+  float sum = (float) num1 / num2;
+
+  printf("%.1f", sum);
+  return 0;
+}
