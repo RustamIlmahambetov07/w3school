@@ -1,0 +1,30 @@
+/* If you don't want others (or yourself) to change existing variable values, you can use the const keyword.
+
+This will declare the variable as "constant", which means unchangeable and read-only: */
+
+#include <stdio.h>
+
+int main() {
+  const int myNum = 15;
+  myNum = 10;
+  
+  printf("%d", myNum);
+  return 0;
+}
+
+// Output: 
+prog.c: In function 'main':
+prog.c:5:18: error: assignment of read-only variable 'myNum'
+    5 |   myNum = 10;
+      |         ^
+
+#include <stdio.h>
+
+int main() {
+  const int minutesPerHour = 60;
+
+  printf("%d\n", minutesPerHour);
+  return 0;
+}
+
+// Output: 60
