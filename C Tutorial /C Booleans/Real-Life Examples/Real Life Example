@@ -1,0 +1,33 @@
+/* Let's think of a "real life example" where we need to find out if a person is old enough to vote.
+
+In the example below, we use the >= comparison operator to find out if the age (25) is greater than OR equal to the voting age limit, which is set to 18: */
+
+#include <stdio.h>
+
+int main() {
+  int myAge = 25;
+  int votingAge = 18;
+  
+  printf("%d", myAge >= votingAge); // Returns 1 (true), meaning 25 year olds are allowed to vote!
+  return 0;
+}
+
+/* Cool, right? An even better approach (since we are on a roll now), would be to wrap the code above in an if...else statement, so we can perform different actions depending on the result: */
+
+// Example
+// Output "Old enough to vote!" if myAge is greater than or equal to 18. Otherwise output "Not old enough to vote.":
+
+#include <stdio.h>
+
+int main() {
+  int myAge = 25;
+  int votingAge = 18;
+
+  if (myAge >= votingAge) {
+    printf("Old enough to vote!");
+  } else {
+    printf("Not old enough to vote.");
+  }
+  
+  return 0;
+}
