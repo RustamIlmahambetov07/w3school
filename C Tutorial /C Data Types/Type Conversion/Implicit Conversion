@@ -1,0 +1,44 @@
+/* Implicit conversion is done automatically by the compiler when you assign a value of one type to another.
+
+For example, if you assign an int value to a float type: */
+
+#include <stdio.h>
+
+int main() {
+  // Automatic conversion: int to float
+  float myFloat = 9;
+
+  printf("%f", myFloat);
+  return 0;
+}
+
+/* As you can see, the compiler automatically converts the int value 9 to a float value of 9.000000.
+
+This can be risky, as you might lose control over specific values in certain situations.
+
+Especially if it was the other way around - the following example automatically converts the float value 9.99 to an int value of 9: */
+
+#include <stdio.h>
+
+int main() {
+  // Automatic conversion: float to int
+  int myInt = 9.99;
+
+  printf("%d", myInt);
+  return 0;
+}
+
+/* What happened to .99? We might want that data in our program! So be careful. It is important that you know how the compiler work in these situations, to avoid unexpected results.
+
+As another example, if you divide two integers: 5 by 2, you know that the sum is 2.5. And as you know from the beginning of this page, if you store the sum as an integer, the result will only display the number 2. Therefore, it would be better to store the sum as a float or a double, right? */  
+
+#include <stdio.h>
+
+int main() {
+  float sum = 5 / 2;
+
+  printf("%f", sum);  // 2.000000
+  return 0;
+}
+
+/* Why is the result 2.00000 and not 2.5? Well, it is because 5 and 2 are still integers in the division. In this case, you need to manually convert the integer values to floating-point values. (see below). */
