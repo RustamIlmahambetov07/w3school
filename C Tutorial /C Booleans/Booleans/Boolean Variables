@@ -1,0 +1,30 @@
+/* In C, the bool type is not a built-in data type, like int or char.
+
+It was introduced in C99, and you must import the following header file to use it: */
+
+#include <stdbool.h>
+
+/* A boolean variable is declared with the bool keyword and can take the values true or false: */
+
+bool isProgrammingFun = true;
+bool isFishTasty = false;
+
+/* Before trying to print the boolean variables, you should know that boolean values are returned as integers:
+
+* 1 (or any other number that is not 0) represents true
+* 0 represents false
+Therefore, you must use the %d format specifier to print a boolean value: */
+
+#include <stdio.h>
+#include <stdbool.h>  // Import the boolean header file 
+
+int main() {
+  bool isProgrammingFun = true;
+  bool isFishTasty = false;
+  printf("%d\n", isProgrammingFun);  // Returns 1 (true)
+  printf("%d", isFishTasty);         // Returns 0 (false)
+  
+  return 0;
+}
+
+/* However, it is more common to return a boolean value by comparing values and variables. */
