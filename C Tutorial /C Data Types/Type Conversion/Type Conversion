@@ -1,0 +1,21 @@
+/* Sometimes, you have to convert the value of one data type to another type. This is known as type conversion.
+
+For example, if you try to divide two integers, 5 by 2, you would expect the result to be 2.5. But since we are working with integers (and not floating-point values), the following example will just output 2: */
+
+#include <stdio.h>
+
+int main() {
+  int x = 5;
+  int y = 2;
+  int sum = 5 / 2;
+
+  printf("%d", sum);
+  return 0;
+}
+
+/* To get the right result, you need to know how type conversion works.
+
+There are two types of conversion in C:
+
+Implicit Conversion (automatically)
+Explicit Conversion (manually) */
