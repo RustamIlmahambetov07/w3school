@@ -1,0 +1,21 @@
+/* It is important to note that all elements in an array must be of the same data type.
+
+This means you cannot mix different types of values, like integers and floating point numbers, in the same array: */
+
+// Example
+
+#include <stdio.h>
+
+int main() {
+  // Trying to declare an array of both integers and floating point numbers
+  int myArray[] = {25, 50, 75, 3.15, 5.99};
+  int i;
+  
+  for (i = 0; i < 5; i++) {
+    printf("%d\n", myArray[i]);
+  }
+ 
+  return 0;
+}
+
+/* In the example above, the values 3.15 and 5.99 will be truncated to 3 and 5. In some cases it might also result in an error, so it is important to always make sure that the elements in the array are of the same type. */
