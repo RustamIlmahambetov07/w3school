@@ -1,0 +1,34 @@
+/* You can also loop through the characters of a string, using a for loop: */
+
+// Example
+
+#include <stdio.h>
+
+int main() {
+  char carName[] = "Volvo";
+  int i;
+  
+  for (i = 0; i < 5; ++i) {
+    printf("%c\n", carName[i]);
+  }
+
+  return 0;
+}
+
+/* And like we specified in the arrays chapter, you can also use the sizeof formula (instead of manually write the size of the array in the loop condition (i < 5)) to make the loop more sustainable: */
+
+// Example
+
+#include <stdio.h>
+
+int main() {
+  char carName[] = "Volvo";
+  int length = sizeof(carName) / sizeof(carName[0]);
+  int i;
+  
+  for (i = 0; i < length; ++i) {
+    printf("%c\n", carName[i]);
+  }
+
+  return 0;
+}
