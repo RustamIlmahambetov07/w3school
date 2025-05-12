@@ -1,0 +1,22 @@
+// The default keyword specifies some code to run if there is no case match:
+
+#include <stdio.h>
+
+int main() {
+  int day = 4;
+  
+  switch (day) {
+  case 6:
+    printf("Today is Saturday");
+    break;
+  case 7:
+    printf("Today is Sunday");
+    break;
+  default:
+    printf("Looking forward to the Weekend");
+  }
+  
+  return 0;
+}
+
+// Note: The default keyword must be used as the last statement in the switch, and it does not need a break.
