@@ -1,0 +1,7 @@
+/* A 2D array is also known as a matrix (a table of rows and columns).
+
+To create a 2D array of integers, take a look at the following example: */
+
+int matrix[2][3] = { {1, 4, 2}, {3, 6, 8} };
+
+/* The first dimension represents the number of rows [2], while the second dimension represents the number of columns [3]. The values are placed in row-order, and can be visualized like this: */
