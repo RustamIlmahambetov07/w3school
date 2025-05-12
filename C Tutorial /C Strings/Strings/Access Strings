@@ -1,0 +1,16 @@
+/* Since strings are actually arrays in C, you can access a string by referring to its index number inside square brackets [].
+
+This example prints the first character (0) in greetings: */
+
+// Example
+
+#include <stdio.h>
+
+int main() {
+  char greetings[] = "Hello World!";
+  printf("%c", greetings[0]);
+ 
+  return 0;
+}
+
+/* Note that we have to use the %c format specifier to print a single character. */
