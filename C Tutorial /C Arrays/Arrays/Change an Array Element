@@ -1,0 +1,18 @@
+/* To change the value of a specific element, refer to the index number: */
+
+// Example
+
+myNumbers[0] = 33;
+
+// Example
+
+#include <stdio.h>
+
+int main() {
+  int myNumbers[] = {25, 50, 75, 100};
+  myNumbers[0] = 33;
+
+  printf("%d", myNumbers[0]);
+ 
+  return 0;
+}
