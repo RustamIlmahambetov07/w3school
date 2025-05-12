@@ -1,0 +1,38 @@
+/* In the array loops section in the previous chapter, we wrote the size of the array in the loop condition (i < 4). This is not ideal, since it will only work for arrays of a specified size.
+
+However, by using the sizeof formula from the example above, we can now make loops that work for arrays of any size, which is more sustainable.
+
+Instead of writing: */
+
+// Example
+
+#include <stdio.h>
+
+int main() {
+  int myNumbers[] = {25, 50, 75, 100};
+  int i;
+  
+  for (i = 0; i < 4; i++) {
+    printf("%d\n", myNumbers[i]);
+  }
+ 
+  return 0;
+}
+
+// It is better to write:
+
+// Example
+
+#include <stdio.h>
+
+int main() {
+  int myNumbers[] = {25, 50, 75, 100};
+  int length = sizeof(myNumbers) / sizeof(myNumbers[0]);
+  int i;
+
+  for (i = 0; i < length; i++) {
+    printf("%d\n", myNumbers[i]);
+  }
+  
+  return 0;
+}
